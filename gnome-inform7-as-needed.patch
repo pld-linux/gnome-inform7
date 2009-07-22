@@ -1,0 +1,36 @@
+diff -ur gnome-inform7-5Z71-o/src/gtkterp/frotz/Makefile.am gnome-inform7-5Z71/src/gtkterp/frotz/Makefile.am
+--- gnome-inform7-5Z71-o/src/gtkterp/frotz/Makefile.am	2009-04-05 10:16:38.000000000 -0600
++++ gnome-inform7-5Z71/src/gtkterp/frotz/Makefile.am	2009-07-21 23:51:14.424249128 -0600
+@@ -8,7 +8,7 @@
+ 	glkfrotz.h glkio.h setup.h
+ gtkterp_frotz_CFLAGS = @GTKTERP_CFLAGS@ -I../garglk
+ gtkterp_frotz_LDFLAGS = -L/usr/lib -L/usr/local/lib
+-gtkterp_frotz_LDADD = @GTKTERP_LIBS@ ../garglk/libgarglk.a
++gtkterp_frotz_LDADD = ../garglk/libgarglk.a @GTKTERP_LIBS@
+ 
+ frotzdocdir = $(datadir)/doc/$(PACKAGE)/frotz
+ dist_frotzdoc_DATA = AUTHORS COPYING README TODO
+diff -ur gnome-inform7-5Z71-o/src/gtkterp/git/Makefile.am gnome-inform7-5Z71/src/gtkterp/git/Makefile.am
+--- gnome-inform7-5Z71-o/src/gtkterp/git/Makefile.am	2009-04-06 16:49:48.000000000 -0600
++++ gnome-inform7-5Z71/src/gtkterp/git/Makefile.am	2009-07-21 23:49:50.869855812 -0600
+@@ -7,7 +7,7 @@
+ 	operands.c peephole.c savefile.c saveundo.c search.c terp.c version.h
+ gtkterp_git_CFLAGS = @GTKTERP_CFLAGS@ -I../garglk -DUSE_INLINE -DUSE_DIRECT_THREADING
+ gtkterp_git_LDFLAGS = -L/usr/lib -L/usr/local/lib
+-gtkterp_git_LDADD = @GTKTERP_LIBS@ ../garglk/libgarglk.a
++gtkterp_git_LDADD = ../garglk/libgarglk.a @GTKTERP_LIBS@
+ 
+ gitdocdir = $(datadir)/doc/$(PACKAGE)/git
+ dist_gitdoc_DATA = README.txt
+diff -ur gnome-inform7-5Z71-o/src/gtkterp/glulxe/Makefile.am gnome-inform7-5Z71/src/gtkterp/glulxe/Makefile.am
+--- gnome-inform7-5Z71-o/src/gtkterp/glulxe/Makefile.am	2009-04-05 10:32:59.000000000 -0600
++++ gnome-inform7-5Z71/src/gtkterp/glulxe/Makefile.am	2009-07-21 23:51:21.311283004 -0600
+@@ -7,7 +7,7 @@
+ 	heap.c gestalt.h glulxe.h opcodes.h accel.c profile.c 
+ gtkterp_glulxe_CFLAGS = @GTKTERP_CFLAGS@ -I../garglk -DOS_UNIX
+ gtkterp_glulxe_LDFLAGS = -L/usr/lib -L/usr/local/lib
+-gtkterp_glulxe_LDADD = @GTKTERP_LIBS@ ../garglk/libgarglk.a
++gtkterp_glulxe_LDADD = ../garglk/libgarglk.a @GTKTERP_LIBS@
+ 
+ glulxedocdir = $(datadir)/doc/$(PACKAGE)/glulxe
+ dist_glulxedoc_DATA = README

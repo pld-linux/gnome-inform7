@@ -1,0 +1,12 @@
+diff -ur gnome-inform7-5Z71-o/src/gtkterp/garglk/glk.h gnome-inform7-5Z71/src/gtkterp/garglk/glk.h
+--- gnome-inform7-5Z71-o/src/gtkterp/garglk/glk.h	2008-12-03 10:24:25.000000000 -0700
++++ gnome-inform7-5Z71/src/gtkterp/garglk/glk.h	2009-07-21 23:56:55.522033888 -0600
+@@ -24,7 +24,7 @@
+ #elif (UINT_MAX   == 4294967295)
+ typedef unsigned int glui32;
+ typedef signed   int glsi32;
+-#elif (ULONG_MAX) == 4294967295)
++#elif (ULONG_MAX == 4294967295)
+ typedef unsigned long glui32;
+ typedef signed long glsi32;
+ #else
