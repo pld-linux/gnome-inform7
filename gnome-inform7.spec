@@ -6,8 +6,8 @@ License:	GPL v2 + Closed-source Freely distributable compiler
 Group:		Development
 Source0:	http://dl.sourceforge.net/gnome-inform7/I7_%{version}_GNOME_Source.tar.gz
 # Source0-md5:	cdb48f47b0e18bb7228401b9035b4d13
-Source1:	http://www.inform-fiction.org/I7Downloads/I7_5U92_Linux_i386.tar.gz
-# Source1-md5:	d6faac063eabb0d546baf444cafb0beb
+Source1:	http://inform7.com/download/content/5Z71/I7_5Z71_Linux_i386.tar.gz
+# Source1-md5:	024313efe2d67a5f7a0d38585382c897
 Patch0:		%{name}-as-needed.patch
 Patch1:		%{name}-fix.patch
 URL:		http://inform7.com/
@@ -25,7 +25,7 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %prep
 %setup -q -a1
-tar xzf inform7-5U92/inform7-compilers_5U92_i386.tar.gz
+tar xzf inform7-5Z71/inform7-compilers_5Z71_i386.tar.gz
 %patch0 -p1
 %patch1 -p1
 
